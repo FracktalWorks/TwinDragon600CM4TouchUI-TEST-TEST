@@ -1,0 +1,2 @@
+# TwinDragon600CM4TouchUI-TEST-TEST
+Repository of the Twin Dragon 600 Klipper firmware that uses the BTT Manta - CM4 + Dragon Toolboard along with the BTT HDMI5 V1.1  - ONLY  FOR THE PURPOSE OF TESTING - OCTOPRINT UPDATES, AND OTHER FUNCTIONALITIES. DO NOT PROVIDE THIS TO ANY OF THE CUSTOMERS MACHINES!
