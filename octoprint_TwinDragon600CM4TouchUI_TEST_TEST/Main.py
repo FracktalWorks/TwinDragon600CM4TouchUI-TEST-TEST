@@ -107,7 +107,7 @@ filaments = [
 filaments = OrderedDict(filaments)
 
 #values before 2020 changes
-calibrationPosition = {'X1': 110, 'Y1': 18,
+calibrationPosition = {'X1': 150, 'Y1': 18,
                        'X2': 510, 'Y2': 18,
                        'X3': 310, 'Y3': 308,
                        'X4': 310, 'Y4': 178
