@@ -2319,8 +2319,18 @@ class MainUiClass(QtWidgets.QMainWindow, mainGUI.Ui_MainWindow):
     def restorePrintDefaults(self):
         if dialog.WarningYesNo(self, "Are you sure you want to restore default print settings?\nWarning: Doing so will erase offsets and bed leveling info",
                                overlay=True):
+            os.system('sudo cp -f firmware/GCodes.cfg /home/pi/printer_data/config/GCodes.cfg')
+            print("copied Gcodes")
+            os.system('sudo cp -f firmware/IDEX_mode.cfg /home/pi/printer_data/config/IDEX_mode.cfg')
+            print("copied idex mode")
+            os.system('sudo cp -f firmware/printer.cfg /home/pi/printer_data/config/printer.cfg')
+            print("copied printer cfg")
+            os.system('sudo cp -f firmware/variables.cfg /home/pi/printer_data/config/variables.cfg')
+            print("copied variables")
             octopiclient.gcode(command='M502')
             octopiclient.gcode(command='M500')
+            octopiclient.gcode(command='FIRMWARE_RESTART')
+
 
     ''' +++++++++++++++++++++++++++++++++++ Misc ++++++++++++++++++++++++++++++++ '''
 
